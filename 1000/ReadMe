@@ -1,0 +1,62 @@
+Here is your finalized, end-to-end daily training blueprint. Copy this, print it, or keep it handy—this is your master routine to break through the 1200 rating barrier.
+
+---
+
+## 🏆 The "Pupil-Bound" Daily Grind Blueprint
+
+### Phase 1: The Setup (5 Minutes)
+
+1. **Create the Mashup:** Go to Codeforces -> Gym -> Mashups. Create a new contest with a **150-minute (2.5 hour) duration**.
+2. **Select the Problems:** Pick 5 problems that are **at most 3 years old** (2023–2026) using this exact rating spread to solidify your fundamentals:
+* **Problem A:** 1000 rated
+* **Problem B:** 1000 rated
+* **Problem C:** 1100 rated
+* **Problem D:** 1100 rated
+* **Problem E:** 1200 rated
+
+
+
+---
+
+### Phase 2: The Pre-Contest Ritual (2 Minutes)
+
+1. **Brain Boot-up:** Open your **physical paper notebook**.
+2. **Review:** Spend 2 minutes reading *only* the highlighted "Aha!" boxes from your last 3 days of practice. Remind your brain of the traps you recently fell into so you don't repeat them today.
+
+---
+
+### Phase 3: The Execution (150 Minutes)
+
+1. **Start the Timer:** Lock in for 2.5 hours of deep work.
+2. **The Scratchpad:** Use your paper notebook aggressively to draw arrays, map out logic, and test edge cases.
+3. **The 25-Minute Pivot Rule:** If you are completely stuck on a problem’s logic or have coded yourself into a wall for 25 minutes, **drop it and move to the next problem**. You can come back to it at the end if time permits.
+
+---
+
+### Phase 4: The Clean-Up & Upsolve (60–120 Minutes)
+
+*Your rating grows based on what you do AFTER the timer stops.*
+
+1. **For Solved Problems:** Take 60 seconds to clean up your code (remove debug prints, use clean variable names). Add a 2-line comment at the top explaining the trick, and push it to your **GitHub Repo** (organized by folders like `/1100`, `/1200`).
+2. **For Unsolved Problems (Upsolving):** Open the editorial. Spend a maximum of 45 minutes trying to understand and implement the solution.
+3. **The 45-Minute Cap:** If you still don't get a problem after 45 minutes of reading the editorial/other people's code, write down the problem ID, close the laptop, and save it for next week. **Avoid burnout.**
+
+---
+
+### Phase 5: The Physical Log (5 Minutes)
+
+Once a problem is successfully upsolved and pushed to GitHub, close your laptop and grab your paper notebook to fill in your **Knowledge Vault**:
+
+Draw a box at the bottom of your scratchpad page with a colored pen and fill out these two bullet points for the tough problems:
+
+* 🟥 **What fooled me:** *(e.g., "I tried to use a brute-force nested loop and got TLE.")*
+* 🟥 **The "Aha!" indicator:** *(e.g., "The problem constraints had $N \le 2 \cdot 10^5$, which means I needed an $O(N \log N)$ approach like Sorting or Binary Search.")*
+
+---
+
+## 📅 The Weekly Cadence
+
+* **Frequency:** Run this **5 to 6 days a week**.
+* **Rest Day:** Take 1 or 2 days completely off every week. Let your brain rest, recover, and build those neural connections.
+
+You have a world-class strategy combining time pressure, modern problem selection, code cleanliness, and deep psychological retention. Execute it with discipline, and watch your rating climb.
