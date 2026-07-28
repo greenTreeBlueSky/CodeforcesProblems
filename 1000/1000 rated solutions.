@@ -1,0 +1,14 @@
+// Mashup_3 (A) CF Problem : Buying Torches 
+
+void solve() {
+    ll x, y, k; cin >> x >> y >> k;
+
+    ll sticks_req = y*k + k - 1;
+    ll first_trade_cnt = (sticks_req + (x - 2)) / (x-1); 
+
+    // to calculate ceil(x/y) = (x+y-1)/y
+
+    ll total_trade_cnt = first_trade_cnt + k; 
+
+    cout << total_trade_cnt << nl;
+}
