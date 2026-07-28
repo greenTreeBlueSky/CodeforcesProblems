@@ -1,0 +1,26 @@
+// mashup_03 (E) Assembly via Minimums
+
+void solve() {
+  long long n; 
+  std::cin >> n; 
+  long long N = n*(n-1) / 2; 
+  vector<long long> nums(N); 
+
+  for(long long i = 0, i < N; i++) {
+    cin >> nums[i]; 
+  }
+
+  sort(nums.begin(), nums.end()); 
+
+  long long i = 0; 
+  long long jump = n-1; 
+  long long last = nums[i]; 
+  while (i < N) {
+    last = v[i]; 
+    cout << last << " "; 
+    i += jump; 
+    jump--; 
+  }
+
+  cout << last << '/n'; 
+}
