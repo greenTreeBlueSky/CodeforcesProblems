@@ -1,0 +1,23 @@
+// Solution to CF-1792B Stand-up Comedian
+
+#include <bits/stdc++.h>
+using namespace std; 
+
+int main() {
+  long long t; cin >> t; 
+  while (t--) {
+    int a, b, c, d; cin >> a >> b >> c >> d; 
+    if (a == 0) cout << 1 << nl; 
+    else {
+        int ans = a + min(b,c) * 2 + min(a+1, abs(b-c) * d);
+        cout << ans << '\n'; 
+    }
+  }
+  return 0; 
+}
+
+// idea is score of A and B must be a (atleast) 
+// then treat type_2 as (+1, -1) and type_3 as (-1, +1) then if i can apply type_2 one time I can definetily apply type_3 one time. 
+// that's why ans += min(b, c) * 2 
+// score_A = a, score_B = a again. 
+// then you can either ( make atleast one of score just negative ) or if ( I don't have enough -1 then |b-c| + d )
