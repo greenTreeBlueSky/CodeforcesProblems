@@ -1,0 +1,19 @@
+Main Theory -> how to set presicion in floating point numbers. 
+Code -> 
+
+void solve() {
+    ll n, d, h; cin >> n >> d >> h;
+    vecll y(n);
+    forn(i, 0, n) cin >> y[i];
+
+    ld total_area = n * d * h / 2.00;
+    ld xtra_area = 0;
+    forn(i, 1, n) {
+        ll delta_h = h - (y[i]-y[i-1]);
+        if (delta_h > 0) {
+            xtra_area += (d * delta_h * delta_h) / (2.00 * h);
+        }
+    }
+
+    cout << fixed << setprecision(8) << total_area - xtra_area << nl;
+}
