@@ -1,0 +1,38 @@
+I stored the input in n*m grid. 
+To get minimum penalty and maximum points, I must solve the question which take least time. So, I sorted them out.
+
+void solve() {
+    ll n, m, h; cin >> n >> m >> h;
+    vector<vecll> grid(n, vecll (m, 0));
+    for(ll i = 0; i < n; i++) for(ll j = 0; j < m; j++) cin >> grid[i][j];
+ 
+    vector<tuple<ll, ll, int>> result;
+ 
+    for(ll i = 0; i < n; i++) {
+        sort(grid[i].begin(), grid[i].end());
+        vector<ll> pref = {0};
+        ll points = 0, penalty = 0;
+ 
+        for(ll j = 0; j < m; j++) {
+            if (pref[j] + grid[i][j] <= h) {
+                pref.emplace_back(pref[j] + grid[i][j]);
+                points++;
+                penalty += pref[j] + grid[i][j];
+            }
+            else break;
+        }
+ 
+        result.emplace_back(points, -penalty, -i);
+    }
+ 
+    sort(result.begin(), result.end());
+ 
+    ll cnt = 0;
+    for(const auto &[points, penalty, index] : result) {
+        if (index == 0) cout << n-cnt << endl;
+        cnt++;
+    }
+ 
+}
+Time Complexity = O(n*m) + O(n * (mlogm + m)) + O(n + nlogn)
+Space Complexity = O(n*m) + O(n)
